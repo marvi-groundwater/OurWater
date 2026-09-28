@@ -3,8 +3,13 @@
 The public front door for OurWater: a single static page, published on
 GitHub Pages, with its content managed through a git-based CMS.
 
-**Live site:** https://alanntl.github.io/OurWater/
-**Content admin (CMS):** https://alanntl.github.io/OurWater/admin/
+**Live site:** https://marvi-groundwater.github.io/OurWater/
+**Content admin (CMS):** https://marvi-groundwater.github.io/OurWater/admin/
+
+**Created by Alan Ng ([@alanntl](https://github.com/alanntl)).** It was first
+published as [alanntl/OurWater](https://github.com/alanntl/OurWater) and moved
+here with its full history. That repo is now archived, and its old site
+address forwards here.
 
 ## How it fits together
 

@@ -36,7 +36,7 @@ for (const f of ["index.html", "config.yml", "sveltia-cms.js"]) {
 }
 if (existsSync(join(cms, "config.yml"))) {
   const cfg = readFileSync(join(cms, "config.yml"), "utf8");
-  if (!cfg.includes("repo: alanntl/OurWater")) errors.push("admin/config.yml points at the wrong repo");
+  if (!cfg.includes("repo: marvi-groundwater/OurWater")) errors.push("admin/config.yml points at the wrong repo");
 }
 
 // 5. The content the CMS edits ships with the site (Sveltia previews read it).

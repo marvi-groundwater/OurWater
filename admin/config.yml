@@ -16,12 +16,12 @@
 # just moves to the end of the file. Re-check if sveltia-cms.js is replaced.
 backend:
   name: github
-  repo: alanntl/OurWater
+  repo: marvi-groundwater/OurWater
   branch: main
   auth_methods: [token]
 
-site_url: https://alanntl.github.io/OurWater/
-display_url: https://alanntl.github.io/OurWater/
+site_url: https://marvi-groundwater.github.io/OurWater/
+display_url: https://marvi-groundwater.github.io/OurWater/
 
 media_folder: "assets/uploads"
 public_folder: "assets/uploads"
