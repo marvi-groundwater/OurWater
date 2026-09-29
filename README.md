@@ -47,8 +47,11 @@ No dependencies to install.
 
 ## Domain
 
-`ourwater.org.au` is registered at WebCentral and uses WebCentral's own DNS
-("Client Area DNS" on `ns1–3.netregistry.net`). It has two records:
+`ourwater.org.au` is registered at WebCentral, but its DNS is in **AWS Route
+53**, in the MyWell AWS account next to `mywell.au`. It moved on 2026-09-29.
+The hosted zone is `Z1009294FS1EJV2LOXFE`, and the nameservers set at the
+registrar are `ns-616.awsdns-13.net`, `ns-1959.awsdns-52.co.uk`,
+`ns-1242.awsdns-27.org` and `ns-146.awsdns-18.com`. It has two records:
 
 - `A` on `ourwater.org.au`, pointing at GitHub Pages: `185.199.108.153`,
   `.109.153`, `.110.153` and `.111.153`.
@@ -58,10 +61,11 @@ The custom domain is also set in this repo's Pages settings. GitHub serves
 the HTTPS certificate and redirects `www` and the old github.io address to
 `ourwater.org.au`.
 
-To edit the records, go to the WebCentral console: **Products & Services →
-DNS → DNS Records**. That table sits in an embedded frame whose buttons may
-not respond in Chrome. If so, open the frame on its own page
-(`domainservices.webcentral.au`); it works there.
+Edit records with the AWS console or CLI, for example
+`aws route53 list-resource-record-sets --hosted-zone-id Z1009294FS1EJV2LOXFE`.
+WebCentral is only the registrar now. The one thing still done there is
+changing nameservers, under the domain's **Update Nameservers**. The old
+WebCentral DNS zone is left over from before the move and no longer counts.
 
 ## Where the buttons go
 
