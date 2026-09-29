@@ -365,6 +365,18 @@
        footer's half-width column. */
     .footer-brand img { width: 158px; max-width: 100%; height: auto; margin-bottom: 10px; }
     .footer-legal { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .85rem; }
+    /* Partner logos: one shared height so seals and wordmarks sit on a line,
+       and a width cap so the very wide wordmarks do not dwarf the seals. */
+    .partners { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .partners h4 { margin: 0 0 14px; color: var(--ink); font-size: .95rem; }
+    .partner-group + .partner-group { margin-top: 18px; }
+    .partner-group h5 { margin: 0 0 10px; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+    .partner-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 34px; }
+    .partner-group img { display: block; height: 72px; width: auto; max-width: 210px; object-fit: contain; }
+    @media (max-width: 700px) {
+      .partner-group ul { gap: 14px 24px; }
+      .partner-group img { height: 54px; max-width: 150px; }
+    }
 
     /* Mobile smart bar: open in the app, or stay in the browser */
     .app-bar {
@@ -618,7 +630,7 @@
     <div class="wrap footer-cols">
       <div class="footer-brand">
         <img src="assets/logo/ourwater-lockup.png" alt="OurWater" />
-        <p>OurWater for Water Sustainability — a free, community-focused water monitoring and learning app, built on the MARVI approach.</p>
+        <p>OurWater for Water Sustainability — a free, community-focused water monitoring and learning app, built on the MARVI approach and led by Western Sydney University.</p>
       </div>
       <div>
         <h4>Product</h4>
@@ -649,6 +661,36 @@
     <div class="wrap footer-legal">
       OurWater for Water Sustainability — built on the MARVI approach.
     </div>
+    <!-- Acknowledgement of the MARVI partners, grouped as in the MARVI team's
+         partner slide. Logos are trimmed copies from that slide. -->
+    <section class="wrap partners" aria-labelledby="partners-title">
+      <h4 id="partners-title">Key MARVI partners</h4>
+      <div class="partner-group">
+        <h5>Current</h5>
+        <ul>
+          <li><img src="assets/partners/western-sydney-university.webp" alt="Western Sydney University" /></li>
+          <li><img src="assets/partners/vidya-bhawan-kvk.webp" alt="Vidya Bhawan Krishi Vigyan Kendra" /></li>
+          <li><img src="assets/partners/mpuat.webp" alt="Maharana Pratap University of Agriculture and Technology" /></li>
+          <li><img src="assets/partners/development-support-centre.webp" alt="Development Support Centre" /></li>
+          <li><img src="assets/partners/arid-communities-technologies.webp" alt="Arid Communities and Technologies" /></li>
+          <li><img src="assets/partners/mekong-region-futures-institute.webp" alt="Mekong Region Futures Institute" /></li>
+        </ul>
+      </div>
+      <div class="partner-group">
+        <h5>Past</h5>
+        <ul>
+          <li><img src="assets/partners/iwmi.webp" alt="International Water Management Institute" /></li>
+          <li><img src="assets/partners/csiro.webp" alt="CSIRO" /></li>
+        </ul>
+      </div>
+      <div class="partner-group">
+        <h5>Funding</h5>
+        <ul>
+          <li><img src="assets/partners/aciar.webp" alt="Australian Government — Australian Centre for International Agricultural Research" /></li>
+          <li><img src="assets/partners/australian-water-partnership.webp" alt="The Australian Water Partnership" /></li>
+        </ul>
+      </div>
+    </section>
   </footer>
 
   <!-- Mobile smart bar. Hidden until the script confirms an Android/iOS
