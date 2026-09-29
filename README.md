@@ -3,8 +3,8 @@
 The public front door for OurWater: a single static page, published on
 GitHub Pages, with its content managed through a git-based CMS.
 
-**Live site:** https://marvi-groundwater.github.io/OurWater/
-**Content admin (CMS):** https://marvi-groundwater.github.io/OurWater/admin/
+**Live site:** https://ourwater.org.au/
+**Content admin (CMS):** https://ourwater.org.au/admin/
 
 **Created by Alan Ng ([@alanntl](https://github.com/alanntl)).** It was first
 published as [alanntl/OurWater](https://github.com/alanntl/OurWater) and moved
@@ -45,10 +45,28 @@ node scripts/build.mjs && node scripts/verify.mjs
 then serve `_site/` (for example `python3 -m http.server --directory _site`).
 No dependencies to install.
 
+## Domain
+
+`ourwater.org.au` is registered at WebCentral and uses WebCentral's own DNS
+("Client Area DNS" on `ns1–3.netregistry.net`). It has two records:
+
+- `A` on `ourwater.org.au`, pointing at GitHub Pages: `185.199.108.153`,
+  `.109.153`, `.110.153` and `.111.153`.
+- `CNAME` `www` → `marvi-groundwater.github.io.`
+
+The custom domain is also set in this repo's Pages settings. GitHub serves
+the HTTPS certificate and redirects `www` and the old github.io address to
+`ourwater.org.au`.
+
+To edit the records, go to the WebCentral console: **Products & Services →
+DNS → DNS Records**. That table sits in an embedded frame whose buttons may
+not respond in Chrome. If so, open the frame on its own page
+(`domainservices.webcentral.au`); it works there.
+
 ## Where the buttons go
 
-OurWater has no app, store listing or domain of its own yet: today it runs
-as a mode of the MyWell app. So the page's working links still point there —
+OurWater has no app or store listing of its own yet, only this site's
+domain: today it runs as a mode of the MyWell app. So the page's working links still point there —
 Sign in and Create account (`https://app.mywell.au`), the Google Play and
 App Store listings, the Android package and App Store id behind the
 open-in-app bar and the iOS banner, the `mywell://` link that bar opens on an

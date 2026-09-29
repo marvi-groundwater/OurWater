@@ -20,8 +20,8 @@ backend:
   branch: main
   auth_methods: [token]
 
-site_url: https://marvi-groundwater.github.io/OurWater/
-display_url: https://marvi-groundwater.github.io/OurWater/
+site_url: https://ourwater.org.au/
+display_url: https://ourwater.org.au/
 
 media_folder: "assets/uploads"
 public_folder: "assets/uploads"
