@@ -365,17 +365,21 @@
        footer's half-width column. */
     .footer-brand img { width: 158px; max-width: 100%; height: auto; margin-bottom: 10px; }
     .footer-legal { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .85rem; }
-    /* Partner logos: one shared height so seals and wordmarks sit on a line,
-       and a width cap so the very wide wordmarks do not dwarf the seals. */
-    .partners { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); }
-    .partners h4 { margin: 0 0 14px; color: var(--ink); font-size: .95rem; }
-    .partner-group + .partner-group { margin-top: 18px; }
-    .partner-group h5 { margin: 0 0 10px; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
-    .partner-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 34px; }
-    .partner-group img { display: block; height: 72px; width: auto; max-width: 210px; object-fit: contain; }
+    /* Partner band: a pale strip closing the page. The negative bottom margin
+       cancels the footer's bottom padding so the band runs to the page edge.
+       Logos share one height so seals and wordmarks sit on a line, with a
+       width cap so the very wide wordmarks do not dwarf the seals; multiply
+       blends their white JPEG backgrounds into the band. */
+    .partners { margin: 22px 0 -44px; padding: 18px 0 20px; background: var(--wash); border-top: 1px solid var(--line); text-align: center; }
+    .partners h4 { margin: 0 0 12px; color: var(--ink); font-size: .9rem; }
+    .partners .groups { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-end; gap: 14px 40px; }
+    .partner-group h5 { margin: 0 0 6px; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .partner-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 16px; }
+    .partner-group img { display: block; height: 38px; width: auto; max-width: 136px; object-fit: contain; mix-blend-mode: multiply; }
     @media (max-width: 700px) {
-      .partner-group ul { gap: 14px 24px; }
-      .partner-group img { height: 54px; max-width: 150px; }
+      .partners .groups { gap: 12px 28px; }
+      .partner-group ul { gap: 8px; }
+      .partner-group img { height: 28px; max-width: 88px; }
     }
 
     /* Mobile smart bar: open in the app, or stay in the browser */
@@ -663,8 +667,10 @@
     </div>
     <!-- Acknowledgement of the MARVI partners, grouped as in the MARVI team's
          partner slide. Logos are trimmed copies from that slide. -->
-    <section class="wrap partners" aria-labelledby="partners-title">
+    <section class="partners" aria-labelledby="partners-title">
+      <div class="wrap">
       <h4 id="partners-title">Key MARVI partners</h4>
+      <div class="groups">
       <div class="partner-group">
         <h5>Current</h5>
         <ul>
@@ -689,6 +695,8 @@
           <li><img src="assets/partners/aciar.webp" alt="Australian Government — Australian Centre for International Agricultural Research" /></li>
           <li><img src="assets/partners/australian-water-partnership.webp" alt="The Australian Water Partnership" /></li>
         </ul>
+      </div>
+      </div>
       </div>
     </section>
   </footer>
