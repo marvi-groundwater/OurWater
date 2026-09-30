@@ -369,15 +369,21 @@
        cancels the footer's bottom padding so the band runs to the page edge.
        Logos share one height so seals and wordmarks sit on a line, with a
        width cap so the very wide wordmarks do not dwarf the seals; multiply
-       blends their white JPEG backgrounds into the band. */
+       blends their white JPEG backgrounds into the band. Divider lines mark
+       where Current, Past and Funding begin: vertical beside each other,
+       horizontal once the groups stack on phones. */
     .partners { margin: 22px 0 -44px; padding: 18px 0 20px; background: var(--wash); border-top: 1px solid var(--line); text-align: center; }
     .partners h4 { margin: 0 0 12px; color: var(--ink); font-size: .9rem; }
-    .partners .groups { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-end; gap: 14px 40px; }
-    .partner-group h5 { margin: 0 0 6px; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .partners .groups { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; }
+    .partner-group { padding: 0 30px; }
+    .partner-group + .partner-group { border-left: 2px solid #c9d8e0; }
+    .partner-group h5 { margin: 0 0 8px; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--brand-deep); }
     .partner-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 16px; }
     .partner-group img { display: block; height: 38px; width: auto; max-width: 136px; object-fit: contain; mix-blend-mode: multiply; }
     @media (max-width: 700px) {
-      .partners .groups { gap: 12px 28px; }
+      .partners .groups { flex-direction: column; align-items: center; gap: 12px; }
+      .partner-group { padding: 0; }
+      .partner-group + .partner-group { border-left: 0; border-top: 2px solid #c9d8e0; padding-top: 12px; width: 100%; }
       .partner-group ul { gap: 8px; }
       .partner-group img { height: 28px; max-width: 88px; }
     }
