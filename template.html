@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OurWater — Community water monitoring</title>
+  <title>OurWater — Water monitoring</title>
   <link rel="icon" type="image/png" href="assets/logo/ourwater-mark.png" />
   <!-- iOS Safari's native banner: shows OPEN when the app is installed,
        GET (App Store) when it isn't — the platform's own open-or-install UI. -->
   <meta name="apple-itunes-app" content="app-id=@@APPLE_APP_ID@@" />
   <meta
     name="description"
-    content="OurWater is a free, community-focused water monitoring and learning app built on the MARVI approach. Record groundwater, rainfall and water-quality readings, see them on a map, and explore trends over time."
+    content="OurWater is a free water monitoring and learning app built on the MARVI approach. Record water-level, rainfall and water-quality readings, see them on a map, and explore trends over time."
   />
   <style>
     :root {
@@ -307,6 +307,9 @@
     .tut .dur { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums;
                 flex: none; }
     .tut p { margin: 0; font-size: .9rem; color: var(--muted); line-height: 1.5; }
+    .tut .tut-phone { display: inline-block; margin-top: 10px; font-size: .85rem; font-weight: 600;
+                      color: var(--brand); text-decoration: none; }
+    .tut .tut-phone:hover { text-decoration: underline; }
 
     .store-badge {
       display: flex; align-items: center; gap: 12px;
@@ -490,8 +493,8 @@
         <div class="wrap">
           <h2>One place for your local water story</h2>
           <p class="section-sub">
-            While its foundation is groundwater, OurWater supports broader local water
-            monitoring — rainfall, surface water, water quality and water storage systems.
+            OurWater supports local water monitoring of every kind — wells, rivers, springs,
+            rainfall, water quality and water storage systems.
           </p>
           <div class="features">
 @@OVERVIEW_FEATURES@@
@@ -545,7 +548,7 @@
           <h2>How it works</h2>
           <p class="section-sub">
             Four steps from "we should watch that well" to a living record your
-            whole community can read.
+            whole team can read.
           </p>
           <div class="steps">
 @@STEPS@@
@@ -585,8 +588,8 @@
           <h2>A shared, public water dataset</h2>
           <p class="section-sub">
             Every OurWater reading joins a shared dataset that anyone with an account can
-            explore — usable for non-commercial education, research and community water
-            management. Community records sit alongside major public datasets.
+            explore — usable for non-commercial education, research and local water
+            management. Records from OurWater users sit alongside major public datasets.
           </p>
           <div class="datasets">
 @@DATASETS@@
@@ -640,7 +643,7 @@
     <div class="wrap footer-cols">
       <div class="footer-brand">
         <img src="assets/logo/ourwater-lockup.png" alt="OurWater" />
-        <p>OurWater for Water Sustainability — a free, community-focused water monitoring and learning app, built on the MARVI approach and led by Western Sydney University.</p>
+        <p>OurWater for Water Sustainability — a free water monitoring and learning app, built on the MARVI approach and led by Western Sydney University.</p>
       </div>
       <div>
         <h4>Product</h4>

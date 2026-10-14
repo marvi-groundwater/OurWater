@@ -62,7 +62,8 @@ const step = (s, i) => `            <div class="step">
 // the app) rather than embedded from YouTube, so the page pulls in no
 // third-party player and no tracking. preload="none" means nine videos on one
 // page cost nine HTTP requests for the poster images and nothing else until
-// somebody actually presses play.
+// somebody actually presses play. A card whose video also has a portrait phone
+// cut (the app looks different below 768px) links it underneath.
 const tutorial = (t) => `            <figure class="tut">
               <video
                 controls
@@ -78,6 +79,7 @@ const tutorial = (t) => `            <figure class="tut">
               <figcaption>
                 <h3>${esc(t.title)}<span class="dur">${esc(t.duration)}</span></h3>
                 <p>${esc(t.text)}</p>
+                ${t.phoneSrc ? `<a class="tut-phone" href="${esc(t.phoneSrc)}" target="_blank" rel="noopener">Phone version (portrait, ${esc(t.phoneDuration)})</a>` : ""}
               </figcaption>
             </figure>`;
 

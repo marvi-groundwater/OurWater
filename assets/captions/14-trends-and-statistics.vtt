@@ -1,0 +1,263 @@
+WEBVTT
+
+00:00:00.250 --> 00:00:06.106
+In this video you will read the water data of a
+whole area, learn to read a falling water level,
+
+00:00:06.226 --> 00:00:09.082
+and compare stations with statistics.
+
+00:00:09.883 --> 00:00:13.843
+Anyone in OurWater can read the water data of
+a whole area.
+
+00:00:13.963 --> 00:00:17.755
+First, switch the menu from Easy to Advanced.
+
+00:00:18.583 --> 00:00:21.631
+Under All monitoring data are two pages.
+
+00:00:21.751 --> 00:00:24.535
+Data trend draws lines over time.
+
+00:00:24.655 --> 00:00:27.127
+Data statistics gives numbers.
+
+00:00:27.950 --> 00:00:30.830
+Data trend starts empty on purpose.
+
+00:00:30.950 --> 00:00:33.422
+Open the Monitoring area box.
+
+00:00:33.542 --> 00:00:36.158
+An area is a group of stations.
+
+00:00:36.983 --> 00:00:39.167
+Choose Badgaon village.
+
+00:00:39.287 --> 00:00:41.855
+Each coloured line is one station.
+
+00:00:41.975 --> 00:00:47.063
+Time runs along the bottom, and the
+measurement, with its unit, up the side.
+
+00:00:47.883 --> 00:00:50.259
+Move the pointer over the chart.
+
+00:00:50.379 --> 00:00:53.763
+A box shows each station's value on that date.
+
+00:00:53.883 --> 00:00:56.259
+The legend names each colour.
+
+00:00:57.083 --> 00:01:04.187
+To narrow down, use Station for one station, here
+Asha's open well, or Station type for a whole kind,
+
+00:01:04.307 --> 00:01:06.299
+such as all wells.
+
+00:01:07.117 --> 00:01:09.373
+Data type is what is measured.
+
+00:01:09.493 --> 00:01:14.293
+For a well it is Groundwater depth, the
+distance from the ground down to the water.
+
+00:01:15.117 --> 00:01:16.989
+Now read the line.
+
+00:01:17.109 --> 00:01:22.749
+The number is how far down you reach to touch the
+water, so a bigger number means lower water.
+
+00:01:22.869 --> 00:01:25.821
+That is why the axis is upside down.
+
+00:01:26.650 --> 00:01:30.850
+So when the line slides down the page, the
+water is falling.
+
+00:01:30.970 --> 00:01:33.898
+Here it sank for months, then climbed back.
+
+00:01:34.717 --> 00:01:39.277
+Open Analysis controls and untick Flip Y axis
+if you prefer.
+
+00:01:39.397 --> 00:01:42.493
+A falling level then looks like a rising line.
+
+00:01:43.317 --> 00:01:45.189
+Tick it again.
+
+00:01:45.309 --> 00:01:49.461
+Granularity groups measurements by week, month
+or year.
+
+00:01:49.581 --> 00:01:51.501
+Auto chooses for you.
+
+00:01:52.317 --> 00:01:55.605
+Series draws a line per station or an average.
+
+00:01:55.725 --> 00:01:58.317
+Measure can show the rate of change.
+
+00:01:58.437 --> 00:02:01.941
+Chart switches line, bars and areas.
+
+00:02:02.750 --> 00:02:05.822
+Chart stations picks which stations are drawn.
+
+00:02:06.650 --> 00:02:10.490
+Preprocess can smooth wiggles or clip extreme
+values.
+
+00:02:11.317 --> 00:02:16.141
+Time range sets how far back to look, from the
+last month to fifteen years.
+
+00:02:16.261 --> 00:02:18.757
+Here, the last six months.
+
+00:02:19.583 --> 00:02:22.943
+Custom range lets you type your own two dates.
+
+00:02:23.063 --> 00:02:26.759
+If nothing was measured between them, the page
+says so.
+
+00:02:27.583 --> 00:02:34.063
+Under the chart are the numbers: the latest measurement,
+the average, and the median, the middle value.
+
+00:02:34.183 --> 00:02:39.199
+Then the range, the count, how many stations
+have data, and the dates.
+
+00:02:40.017 --> 00:02:45.465
+Show map opens a map of the same stations, so
+you see where each line comes from.
+
+00:02:46.283 --> 00:02:48.155
+Happy with a picture?
+
+00:02:48.275 --> 00:02:50.867
+Press Save view and type a name.
+
+00:02:51.683 --> 00:02:54.371
+Press Enter to keep it in your account.
+
+00:02:54.491 --> 00:02:57.371
+Reset clears the page back to the start.
+
+00:02:58.183 --> 00:03:03.631
+Pick one from Load a saved view and the picture
+comes straight back, here a ready-made one,
+
+00:03:03.751 --> 00:03:07.111
+with its area, station and settings.
+
+00:03:07.917 --> 00:03:11.829
+Now Data statistics: the same area as numbers.
+
+00:03:11.949 --> 00:03:14.565
+Choose the area and a Time range.
+
+00:03:14.685 --> 00:03:17.445
+Last 15 years counts everything.
+
+00:03:18.250 --> 00:03:24.394
+Scope overview: how many stations, how many
+measurements, how many stations have data,
+
+00:03:24.514 --> 00:03:26.410
+and the dates they cover.
+
+00:03:27.217 --> 00:03:32.497
+Data-type insights change with what you
+measure: the shallowest depth, the deepest,
+
+00:03:32.617 --> 00:03:34.873
+the middle value and the spread.
+
+00:03:35.683 --> 00:03:39.643
+The Station value map colours each station
+from low to high.
+
+00:03:39.763 --> 00:03:45.403
+Map value chooses latest, average, median,
+minimum or maximum.
+
+00:03:46.217 --> 00:03:49.889
+The histogram counts measurements in each band
+of values.
+
+00:03:50.009 --> 00:03:52.649
+The tall bar is where most of them sit.
+
+00:03:53.450 --> 00:03:55.994
+The box plot shows the middle half.
+
+00:03:56.114 --> 00:04:03.386
+The box runs from Q1 to Q3: a quarter of
+values lie below Q1, a quarter above Q3.
+
+00:04:04.217 --> 00:04:09.593
+Monthly data availability: each row is a
+station, each column a month.
+
+00:04:09.713 --> 00:04:13.721
+Dark green means many measurements, striped
+means none.
+
+00:04:14.550 --> 00:04:20.526
+Data quality has four checks: stations without
+data, stations quiet for ninety days,
+
+00:04:20.646 --> 00:04:24.582
+entries at the same time, and statistical
+outliers.
+
+00:04:25.383 --> 00:04:28.503
+An outlier is a value far from the rest.
+
+00:04:28.623 --> 00:04:34.023
+It may not be a mistake: the borewell is deeper and
+the check-dam shallower than the well.
+
+00:04:34.143 --> 00:04:36.231
+Check before removing it.
+
+00:04:37.050 --> 00:04:40.674
+The Station comparison table lists every
+station.
+
+00:04:40.794 --> 00:04:45.714
+Click a column name, such as Variability, to
+rank the stations by it.
+
+00:04:46.517 --> 00:04:48.413
+Click again to reverse.
+
+00:04:48.533 --> 00:04:54.269
+Dashes mean no measurements of this type: the
+rain gauge records rain, not water level.
+
+00:04:55.083 --> 00:04:57.819
+These pages have no download button.
+
+00:04:57.939 --> 00:05:00.747
+To keep a picture, use Save view.
+
+00:05:01.550 --> 00:05:07.838
+To take measurements away as a spreadsheet, open a
+station's history in My measurements and press Export.
+
+00:05:08.650 --> 00:05:11.458
+That is how to read the data of an area.
+
+00:05:11.578 --> 00:05:14.242
+Thanks for helping look after our water.

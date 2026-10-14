@@ -6,9 +6,9 @@
     "androidPackage": "org.marvi.mywell"
   },
   "hero": {
-    "title": "Water, made visible for your community",
+    "title": "Water, made visible for your area",
     "highlight": "visible",
-    "tagline": "OurWater is a free, community-focused water monitoring and learning app, built on the MARVI approach to participatory groundwater management. Record readings from wells, rain gauges and other local water sources — then see them on a map and watch the trends.",
+    "tagline": "OurWater is a free water monitoring and learning app, built on the MARVI approach to participatory water management. Record readings from wells, rain gauges and other local water sources — then see them on a map and watch the trends.",
     "note": "OurWater is free on Google Play and the App Store. Prefer not to install? The web app has every feature too.",
     "image": "assets/screenshots/home.jpg"
   },
@@ -110,100 +110,238 @@
     {
       "image": "assets/illustrations/river.webp",
       "title": "Watch the trends",
-      "text": "Charts and summaries build up automatically. Compare seasons, spot declines early, and share the picture with your community."
+      "text": "Charts and summaries build up automatically. Compare seasons, spot declines early, and share the picture with your team."
     }
   ],
   "tutorials": {
     "title": "Watch how it's done",
-    "subtitle": "Eleven short tutorials, narrated, recorded from the real app. Start with the first one and you will have an account in about three minutes.",
+    "subtitle": "Twenty-six short tutorials, narrated, recorded from the real app. Start with the first one and you will have an account in about 5 minutes.",
     "items": [
       {
-        "title": "Create your account",
-        "text": "Start here. We fill the sign-up form in together — your name, country, choosing a username, and a password that will hold — then sign in with it.",
-        "duration": "3:25",
-        "src": "https://app.mywell.au/tutorials/01-getting-started.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/01-getting-started.jpg?v=4",
-        "captions": "assets/captions/01-getting-started.vtt"
+        "title": "Create your OurWater account",
+        "text": "How to make a free OurWater account, one box at a time: your name, email, a username that is checked as you type, your country and language, a strong password, the Terms and the age tick, then the code that arrives in your email, and what to do if it does not.",
+        "duration": "4:38",
+        "src": "https://app.ourwater.org.au/tutorials/01-create-account.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/01-create-account.jpg?v=20261014",
+        "captions": "assets/captions/01-create-account.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/01-create-account.mp4?v=20261014",
+        "phoneDuration": "5:32"
       },
       {
-        "title": "Your Home screen",
-        "text": "What you see every time you open OurWater: your stations at a glance, your own map, the record-a-reading shortcut and your recent activity.",
-        "duration": "2:12",
-        "src": "https://app.mywell.au/tutorials/02-home.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/02-home.jpg?v=4",
-        "captions": "assets/captions/02-home.vtt"
+        "title": "Sign in, and if you forget your password",
+        "text": "How to sign in to OurWater with your email or your username, what the red messages mean, how to reset a forgotten password with a code from your email, the first-sign-in Terms page, and how to sign out.",
+        "duration": "4:31",
+        "src": "https://app.ourwater.org.au/tutorials/02-sign-in-and-password.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/02-sign-in-and-password.jpg?v=20261014",
+        "captions": "assets/captions/02-sign-in-and-password.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/02-sign-in-and-password.mp4?v=20261014",
+        "phoneDuration": "5:31"
       },
       {
-        "title": "Easy vs Advanced view",
-        "text": "Choose what you see: a streamlined menu for daily field monitoring, or the full suite with community analytics, trends, and admin tools.",
-        "duration": "1:44",
-        "src": "https://app.mywell.au/tutorials/03-easy-vs-advanced.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/03-easy-vs-advanced.jpg?v=4",
-        "captions": "assets/captions/03-easy-vs-advanced.vtt"
+        "title": "Finding your way around OurWater",
+        "text": "A tour of the OurWater menu on a computer and on a phone: the station type chooser, Easy and Advanced, the Account group, your profile menu, your language, and the helper button.",
+        "duration": "4:55",
+        "src": "https://app.ourwater.org.au/tutorials/03-find-your-way-around.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/03-find-your-way-around.jpg?v=20261014",
+        "captions": "assets/captions/03-find-your-way-around.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/03-find-your-way-around.mp4?v=20261014",
+        "phoneDuration": "4:26"
       },
       {
-        "title": "Add and manage your stations",
-        "text": "Register the wells, rain gauges, dams and springs you look after, and keep the list tidy as it grows.",
-        "duration": "1:26",
-        "src": "https://app.mywell.au/tutorials/04-my-stations.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/04-my-stations.jpg?v=4",
-        "captions": "assets/captions/04-my-stations.vtt"
+        "title": "Your Home page: Easy and Advanced",
+        "text": "A close look at the OurWater Home page: the Easy view with its six big buttons and your stations map, then the Advanced view with the monitoring summary, the add-a-measurement picker, shortcuts and recent activity.",
+        "duration": "4:48",
+        "src": "https://app.ourwater.org.au/tutorials/04-your-home-page.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/04-your-home-page.jpg?v=20261014",
+        "captions": "assets/captions/04-your-home-page.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/04-your-home-page.mp4?v=20261014",
+        "phoneDuration": "4:53"
       },
       {
-        "title": "Record a reading",
-        "text": "A complete visit from start to save — choosing the station, entering water level or quality, adding a photo, and saving it.",
-        "duration": "2:26",
-        "src": "https://app.mywell.au/tutorials/05-record-a-reading.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/05-record-a-reading.jpg?v=4",
-        "captions": "assets/captions/05-record-a-reading.vtt"
+        "title": "Your stations: find, filter and open one",
+        "text": "How to use the My stations page: the count and tiles, search, filters, grouping, list and grid, sorting, paging, the row buttons, and the station pop-up with its favourite button.",
+        "duration": "5:12",
+        "src": "https://app.ourwater.org.au/tutorials/05-my-stations.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/05-my-stations.jpg?v=20261014",
+        "captions": "assets/captions/05-my-stations.vtt"
       },
       {
-        "title": "Find stations on the map",
-        "text": "Both maps explained: your own station map and the all-stations map, with the area and station-type filters.",
-        "duration": "1:48",
-        "src": "https://app.mywell.au/tutorials/06-maps.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/06-maps.jpg?v=4",
-        "captions": "assets/captions/06-maps.vtt"
+        "title": "Add a station in five easy steps",
+        "text": "How to register a new station in OurWater: choose the kind (or describe your own), name it, set its place with your phone's location, typed numbers or the map, add a photo, review and save. Then a look at the station's page, its code and its QR label.",
+        "duration": "5:23",
+        "src": "https://app.ourwater.org.au/tutorials/06-add-a-station.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/06-add-a-station.jpg?v=20261014",
+        "captions": "assets/captions/06-add-a-station.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/06-add-a-station.mp4?v=20261014",
+        "phoneDuration": "6:21"
       },
       {
-        "title": "Map tools & monitoring areas",
-        "text": "Search by place or GPS coordinates, use floating filter widgets for station type and radius, and build custom monitoring areas.",
-        "duration": "2:15",
-        "src": "https://app.mywell.au/tutorials/07-map-widgets-and-areas.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/07-map-widgets-and-areas.jpg?v=4",
-        "captions": "assets/captions/07-map-widgets-and-areas.vtt"
+        "title": "Your station page: photo, QR code, edit and delete",
+        "text": "A tour of one station's own page: its buttons, details and location, adding or replacing the photo, printing the QR code for the well, changing the details, and deleting a station you no longer need.",
+        "duration": "5:10",
+        "src": "https://app.ourwater.org.au/tutorials/07-your-station-page.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/07-your-station-page.jpg?v=20261014",
+        "captions": "assets/captions/07-your-station-page.vtt"
       },
       {
-        "title": "Areas, trends and statistics",
-        "text": "Read the shared dataset: pick a monitoring area, then read its water-level trend chart and its summary statistics.",
-        "duration": "2:17",
-        "src": "https://app.mywell.au/tutorials/08-data-trend.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/08-data-trend.jpg?v=4",
-        "captions": "assets/captions/08-data-trend.vtt"
+        "title": "Keeping a station private",
+        "text": "What the three privacy levels mean, who can still see a private station, how to ask for a change with a reason, and how to cancel a request that is waiting.",
+        "duration": "4:07",
+        "src": "https://app.ourwater.org.au/tutorials/08-keeping-a-station-private.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/08-keeping-a-station-private.jpg?v=20261014",
+        "captions": "assets/captions/08-keeping-a-station-private.vtt"
       },
       {
-        "title": "Build your own chart",
-        "text": "The chart builder — add data series, pick stations and data types, set the time range, and save a view to come back to.",
-        "duration": "2:56",
-        "src": "https://app.mywell.au/tutorials/09-advanced-trend.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/09-advanced-trend.jpg?v=4",
-        "captions": "assets/captions/09-advanced-trend.vtt"
+        "title": "Record a measurement, start to finish",
+        "text": "How to record a water measurement in OurWater: choose the station, set the date and time, type the depth to water, add temperature and water quality, write a note, save, and find the new rows on your list.",
+        "duration": "5:03",
+        "src": "https://app.ourwater.org.au/tutorials/09-record-a-measurement.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/09-record-a-measurement.jpg?v=20261014",
+        "captions": "assets/captions/09-record-a-measurement.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/09-record-a-measurement.mp4?v=20261014",
+        "phoneDuration": "6:00"
       },
       {
-        "title": "Weather and rainfall",
-        "text": "Rain is where groundwater comes from. The Weather page puts the forecast beside the wells it will feed.",
-        "duration": "1:16",
-        "src": "https://app.mywell.au/tutorials/10-weather.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/10-weather.jpg?v=4",
-        "captions": "assets/captions/10-weather.vtt"
+        "title": "Add a photo, a short video or a sensor reading",
+        "text": "How to add a photo, a short video of up to ten seconds, or a Bluetooth sensor reading to a water measurement in OurWater, and where to find them afterwards on your list.",
+        "duration": "4:01",
+        "src": "https://app.ourwater.org.au/tutorials/10-photo-video-and-sensor.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/10-photo-video-and-sensor.jpg?v=20261014",
+        "captions": "assets/captions/10-photo-video-and-sensor.vtt"
       },
       {
-        "title": "Settings and your language",
-        "text": "Make OurWater yours: switch between sixty-one languages, change the display and theme, and replay any part of the built-in tutorial.",
-        "duration": "1:27",
-        "src": "https://app.mywell.au/tutorials/11-settings-and-language.mp4?v=4",
-        "poster": "https://app.mywell.au/tutorials/11-settings-and-language.jpg?v=4",
-        "captions": "assets/captions/11-settings-and-language.vtt"
+        "title": "Your measurements: search, fix and export",
+        "text": "How to use My measurements in OurWater: search and filter your list, sort and page through it, read the status labels, play a visit's video, fix a mistake on the edit page, open a station's history, export it to Excel, and see the measurements waiting to upload when there was no signal.",
+        "duration": "4:53",
+        "src": "https://app.ourwater.org.au/tutorials/11-your-measurements.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/11-your-measurements.jpg?v=20261014",
+        "captions": "assets/captions/11-your-measurements.vtt"
+      },
+      {
+        "title": "Saving a measurement when you have no signal",
+        "text": "How OurWater keeps your measurement safe when you have no signal: the offline message, saving on your phone, the Waiting to upload box, the upload that sends itself, what happens if the server refuses a visit, and why you never need to wait for signal.",
+        "duration": "4:04",
+        "src": "https://app.ourwater.org.au/tutorials/12-no-signal.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/12-no-signal.jpg?v=20261014",
+        "captions": "assets/captions/12-no-signal.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/12-no-signal.mp4?v=20261014",
+        "phoneDuration": "4:40"
+      },
+      {
+        "title": "The map: stations, filters, search and areas",
+        "text": "How to use the OurWater map: see your stations and everyone's, open a station card, filter by kind and distance, search for a station, a place or GPS numbers, and save a group of stations as a monitoring area.",
+        "duration": "5:22",
+        "src": "https://app.ourwater.org.au/tutorials/13-the-map.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/13-the-map.jpg?v=20261014",
+        "captions": "assets/captions/13-the-map.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/13-the-map.mp4?v=20261014",
+        "phoneDuration": "6:40"
+      },
+      {
+        "title": "Reading the data: trend and statistics",
+        "text": "Read the water data of a whole area: the Data trend chart, how to read a falling water level, and the Data statistics page with its distribution, quality checks and station table.",
+        "duration": "5:14",
+        "src": "https://app.ourwater.org.au/tutorials/14-trends-and-statistics.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/14-trends-and-statistics.jpg?v=20261014",
+        "captions": "assets/captions/14-trends-and-statistics.vtt"
+      },
+      {
+        "title": "Advanced trend: build your own chart",
+        "text": "Build your own chart in OurWater, one data series at a time: pick a station and a data type, draw it as a line, bars or an area, give a second kind of measurement its own axis, set the time range, save the chart as a view and open it again.",
+        "duration": "4:44",
+        "src": "https://app.ourwater.org.au/tutorials/15-advanced-trend.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/15-advanced-trend.jpg?v=20261014",
+        "captions": "assets/captions/15-advanced-trend.vtt"
+      },
+      {
+        "title": "Weather: your forecast and how much to water",
+        "text": "How to use the Weather page: choose your place by searching for it, read the four boxes for right now, the irrigation box and its question mark, and the seven day table, and compare the forecast with your own rain gauge.",
+        "duration": "4:38",
+        "src": "https://app.ourwater.org.au/tutorials/16-weather.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/16-weather.jpg?v=20261014",
+        "captions": "assets/captions/16-weather.vtt",
+        "phoneSrc": "https://app.ourwater.org.au/tutorials/phone/16-weather.mp4?v=20261014",
+        "phoneDuration": "5:33"
+      },
+      {
+        "title": "Weather: exact places, units and a weak signal",
+        "text": "How to get the Weather page right: type the exact coordinates of a station, see what happens when a number is wrong, switch between metric and imperial units in Settings, and what the page shows when the forecast cannot be reached.",
+        "duration": "4:03",
+        "src": "https://app.ourwater.org.au/tutorials/17-weather-places-units-signal.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/17-weather-places-units-signal.jpg?v=20261014",
+        "captions": "assets/captions/17-weather-places-units-signal.vtt"
+      },
+      {
+        "title": "Teams: start a team and invite people",
+        "text": "How teams work in OurWater: the Teams page, organisation teams and personal teams, answering an invitation, starting a team of your own, inviting a neighbour by email, roles, putting a station into a team, and leaving.",
+        "duration": "5:01",
+        "src": "https://app.ourwater.org.au/tutorials/18-teams-and-invitations.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/18-teams-and-invitations.jpg?v=20261014",
+        "captions": "assets/captions/18-teams-and-invitations.vtt"
+      },
+      {
+        "title": "Your organisation: members, invitations and stations",
+        "text": "For Organisation Admins: the organisation page and its four tabs, members and invitations, giving stations to teams, asking members to bring their own stations in, and teams.",
+        "duration": "6:24",
+        "src": "https://app.ourwater.org.au/tutorials/19-your-organisation.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/19-your-organisation.jpg?v=20261014",
+        "captions": "assets/captions/19-your-organisation.vtt"
+      },
+      {
+        "title": "Requests, messages, favourites and recents",
+        "text": "Ask for a station's data and answer other people's requests, read and tidy your messages, message the admin, and keep a shortlist of favourite stations with your recent activity.",
+        "duration": "5:15",
+        "src": "https://app.ourwater.org.au/tutorials/20-requests-and-messages.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/20-requests-and-messages.jpg?v=20261014",
+        "captions": "assets/captions/20-requests-and-messages.vtt"
+      },
+      {
+        "title": "The tool marketplace",
+        "text": "What the Tool marketplace is, how to open a tool, how to ask for a new tool and what happens next, and what a Tool Admin can do: see who can use a tool and add people by email.",
+        "duration": "4:12",
+        "src": "https://app.ourwater.org.au/tutorials/21-tool-marketplace.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/21-tool-marketplace.jpg?v=20261014",
+        "captions": "assets/captions/21-tool-marketplace.vtt"
+      },
+      {
+        "title": "Check dam calculator: how much water went into the ground",
+        "text": "How to use the check dam calculator in the Tool marketplace: choose a check dam, load its measurements, fill in the dam's levels and pond survey, read the result, and keep the PDF report.",
+        "duration": "4:39",
+        "src": "https://app.ourwater.org.au/tutorials/22-check-dam-calculator.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/22-check-dam-calculator.jpg?v=20261014",
+        "captions": "assets/captions/22-check-dam-calculator.vtt"
+      },
+      {
+        "title": "Help, feedback, learning and About",
+        "text": "Where to turn when you need help in OurWater: the Support page, how to send feedback and see exactly what is sent with it, how to message an administrator, the Learn about water page, and the About page with the people and partners behind the app.",
+        "duration": "4:21",
+        "src": "https://app.ourwater.org.au/tutorials/23-help-feedback-learning-about.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/23-help-feedback-learning-about.jpg?v=20261014",
+        "captions": "assets/captions/23-help-feedback-learning-about.vtt"
+      },
+      {
+        "title": "Your profile: picture, name, password, sign out",
+        "text": "How to open your OurWater profile, choose a picture (and why photos cannot be uploaded), change your name and username, set a new password, find the Terms again, and sign out.",
+        "duration": "4:25",
+        "src": "https://app.ourwater.org.au/tutorials/24-your-profile.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/24-your-profile.jpg?v=20261014",
+        "captions": "assets/captions/24-your-profile.vtt"
+      },
+      {
+        "title": "Settings: language, display, units and privacy",
+        "text": "A tour of the OurWater Settings page: choose your language (including a right-to-left one), make the text bigger or darker, pick your units and default place, share the app with a neighbour, and find the privacy options and the tutorials website.",
+        "duration": "5:09",
+        "src": "https://app.ourwater.org.au/tutorials/25-settings-and-language.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/25-settings-and-language.jpg?v=20261014",
+        "captions": "assets/captions/25-settings-and-language.vtt"
+      },
+      {
+        "title": "Ask OurWater Guru, your water helper",
+        "text": "How to use OurWater Guru, the helper built into the app: the round button, the question counter, the suggested questions, asking about a well and reading the answer, what it can and cannot do, photo and voice help, and closing it.",
+        "duration": "4:09",
+        "src": "https://app.ourwater.org.au/tutorials/26-ask-ourwater-guru.mp4?v=20261014",
+        "poster": "https://app.ourwater.org.au/tutorials/26-ask-ourwater-guru.jpg?v=20261014",
+        "captions": "assets/captions/26-ask-ourwater-guru.vtt"
       }
     ]
   },
@@ -225,7 +363,7 @@
     },
     {
       "flag": "🌏",
-      "title": "Your community",
+      "title": "OurWater users",
       "text": "Readings from farmers, volunteers, schools and researchers — the MARVI citizen-science record that started it all, growing every day."
     }
   ],
@@ -236,7 +374,7 @@
   "faq": [
     {
       "q": "How much does OurWater cost?",
-      "a": "Nothing. OurWater is a free, community-focused app developed through the MARVI project for education, citizen science and community water management."
+      "a": "Nothing. OurWater is a free app developed through the MARVI project for education, citizen science and local water management."
     },
     {
       "q": "Can I use it on both my phone and a computer?",
@@ -248,7 +386,7 @@
     },
     {
       "q": "Do I need to be an expert?",
-      "a": "No. OurWater was built with farmers, students and community volunteers — a guided tour walks you through the app, and recording a reading takes under a minute."
+      "a": "No. OurWater was built with farmers, students and volunteers — a guided tour walks you through the app, and recording a reading takes under a minute."
     },
     {
       "q": "I forgot my password — what do I do?",
@@ -267,5 +405,5 @@
     "title": "Start making your water visible",
     "subtitle": "Join farmers, schools, researchers and agencies already monitoring their local water with OurWater."
   },
-  "audience": "OurWater is designed for farmers, community volunteers, schools, universities, researchers, non-government organisations and government agencies. It supports practical learning, citizen science and informed discussion about groundwater, rainfall, surface water and other local water resources."
+  "audience": "OurWater is designed for farmers, volunteers, schools, universities, researchers, non-government organisations and government agencies. It supports practical learning, citizen science and informed discussion about groundwater, rainfall, surface water and other local water resources."
 }

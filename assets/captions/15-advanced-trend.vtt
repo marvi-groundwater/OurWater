@@ -1,0 +1,249 @@
+WEBVTT
+
+00:00:00.250 --> 00:00:03.970
+In this video you will build your own chart in
+OurWater.
+
+00:00:04.090 --> 00:00:08.650
+You will put a well and a rain gauge on one
+picture, draw them your way,
+
+00:00:08.770 --> 00:00:11.290
+and save the chart to open again.
+
+00:00:12.117 --> 00:00:15.693
+OurWater keeps its chart builder in the
+Advanced menu.
+
+00:00:15.813 --> 00:00:20.157
+If you only see the short Easy menu, press
+Advanced at the top.
+
+00:00:20.983 --> 00:00:24.991
+Then choose Advanced trend, under Advanced
+analytics.
+
+00:00:25.111 --> 00:00:27.127
+The page opens empty.
+
+00:00:27.950 --> 00:00:30.254
+It starts empty on purpose.
+
+00:00:30.374 --> 00:00:33.662
+You build the chart one data series at a time.
+
+00:00:33.782 --> 00:00:40.310
+A data series is one station and one kind of
+measurement, drawn as a line, bars or an area.
+
+00:00:41.117 --> 00:00:43.421
+Press Add data series.
+
+00:00:43.541 --> 00:00:47.333
+A row appears, already filled in with a first
+choice.
+
+00:00:47.453 --> 00:00:51.893
+It has three parts: Station, Data type and
+Chart type.
+
+00:00:52.717 --> 00:00:54.805
+Station comes first.
+
+00:00:54.925 --> 00:00:59.725
+Choose one station by name, or a whole area
+such as Badgaon village.
+
+00:00:59.845 --> 00:01:02.317
+Here it is Asha's open well.
+
+00:01:03.150 --> 00:01:06.486
+Data type lists only what this station
+records.
+
+00:01:06.606 --> 00:01:09.822
+For the well that is water level, in metres.
+
+00:01:10.650 --> 00:01:12.810
+The chart is drawn below.
+
+00:01:12.930 --> 00:01:18.138
+Time runs along the bottom, and the water
+level, in metres, up the side.
+
+00:01:18.258 --> 00:01:20.874
+Each line you add gets its own colour.
+
+00:01:21.683 --> 00:01:24.347
+The strip under the chart lets you zoom.
+
+00:01:24.467 --> 00:01:27.899
+Drag its two ends to look closer at one
+season.
+
+00:01:28.717 --> 00:01:31.309
+Chart type is Time series here.
+
+00:01:31.429 --> 00:01:36.901
+Heatmap, Scatter, Distribution and 3D answer
+other questions.
+
+00:01:37.717 --> 00:01:40.069
+Now add a second series.
+
+00:01:40.189 --> 00:01:45.133
+Choose the Village rain gauge, and the data
+type Rainfall, in millimetres.
+
+00:01:45.950 --> 00:01:52.358
+Water level is in metres and rain is in millimetres,
+so OurWater puts the rain on its own scale,
+
+00:01:52.478 --> 00:01:54.350
+on the right.
+
+00:01:55.183 --> 00:01:58.135
+Open the small arrow at the right of the row.
+
+00:01:58.255 --> 00:02:06.079
+Draw has four choices: Show as, Chart, Axis and Flip
+Y axis, which turns the scale upside down.
+
+00:02:06.883 --> 00:02:09.139
+Axis decides the side.
+
+00:02:09.259 --> 00:02:13.579
+Put the rain on the left too, and the well's
+line is squashed flat.
+
+00:02:14.383 --> 00:02:16.255
+Set it back to Right.
+
+00:02:16.375 --> 00:02:20.407
+Rain has its own scale again, and the well
+keeps the left.
+
+00:02:20.527 --> 00:02:23.479
+Two kinds of measurement, one picture.
+
+00:02:24.283 --> 00:02:28.651
+Show as draws a series as a line, bars or an
+area.
+
+00:02:28.771 --> 00:02:31.051
+Rain looks best as bars.
+
+00:02:31.883 --> 00:02:37.115
+Interval sets how often a point is drawn, from
+every measurement to every year.
+
+00:02:37.235 --> 00:02:40.211
+Aggregate says how to combine each month.
+
+00:02:40.331 --> 00:02:42.323
+Sum adds up the rain.
+
+00:02:42.443 --> 00:02:44.915
+Average gives the typical value.
+
+00:02:45.717 --> 00:02:48.285
+Transform can smooth the wiggles.
+
+00:02:48.405 --> 00:02:52.965
+Normalize rescales a series, for example from
+zero to one,
+
+00:02:53.085 --> 00:02:56.733
+so lines with different units can be compared
+by shape.
+
+00:02:57.550 --> 00:03:03.118
+To compare two wells, add one more series: the
+School borewell, water level.
+
+00:03:03.950 --> 00:03:08.054
+If a line does not help, press the cross at
+the end of its row.
+
+00:03:08.174 --> 00:03:10.790
+That removes only that series.
+
+00:03:11.617 --> 00:03:13.681
+The borewell line is gone.
+
+00:03:13.801 --> 00:03:16.297
+Undo steps back one change.
+
+00:03:16.417 --> 00:03:19.633
+Reset clears every row and starts again.
+
+00:03:20.450 --> 00:03:23.546
+The time range covers every series at once.
+
+00:03:23.666 --> 00:03:28.778
+Drag the round handles, or use the arrow keys,
+to look at a shorter period.
+
+00:03:29.583 --> 00:03:31.455
+Happy with the chart?
+
+00:03:31.575 --> 00:03:34.191
+Press Save view and give it a name.
+
+00:03:34.311 --> 00:03:37.455
+Here we call it Well and rain, monthly.
+
+00:03:38.283 --> 00:03:40.155
+Press Save.
+
+00:03:40.275 --> 00:03:46.563
+The chart is kept in Saved views, with its
+rows, its axes, its bars and its dates.
+
+00:03:47.383 --> 00:03:50.071
+Now press Reset to clear the page.
+
+00:03:50.191 --> 00:03:53.623
+Everything goes, but the saved view is safe.
+
+00:03:54.450 --> 00:03:56.922
+Choose it from the Saved views list.
+
+00:03:57.042 --> 00:04:02.178
+The two series, the right axis, the bars and
+the dates all come back.
+
+00:04:02.983 --> 00:04:06.247
+Set default opens this view for you next time.
+
+00:04:06.367 --> 00:04:10.399
+Delete removes it straight away, so check
+before you press it.
+
+00:04:11.217 --> 00:04:16.233
+This page has no download button, so a saved
+view is how you keep the chart.
+
+00:04:16.353 --> 00:04:22.041
+To take the numbers away, open a station's
+measurements and press Export for an Excel file.
+
+00:04:22.850 --> 00:04:25.826
+A new station may have no measurements yet.
+
+00:04:25.946 --> 00:04:30.242
+The page then says so, instead of drawing an
+empty chart.
+
+00:04:30.362 --> 00:04:33.050
+Pick another station in the row above.
+
+00:04:33.883 --> 00:04:38.755
+Now you can build a chart one series at a
+time, give rain its own axis,
+
+00:04:38.875 --> 00:04:41.563
+and keep the picture as a saved view.
+
+00:04:41.683 --> 00:04:44.347
+Thanks for helping look after our water.
