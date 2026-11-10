@@ -31,15 +31,17 @@
       <a href="?clip=station" data-clip="station">Add a station</a>
       <a href="?clip=reading" data-clip="reading">Record a well reading</a>
       <a href="?clip=trend" data-clip="trend">Find a well and read its trend</a>
+      <a href="?clip=tools" data-clip="tools">Open the Groundwater Game</a>
     </nav>
-    <p><a id="download" href="https://github.com/marvi-groundwater/OurWater/releases/tag/workshop-demo-2026-11-10">Download the MP4</a></p>
-    <noscript><p>Open the download link to find the three videos on GitHub.</p></noscript>
+    <p><a id="download" href="https://github.com/marvi-groundwater/OurWater/releases/tag/workshop-demo-2026-11-11">Download the MP4</a></p>
+    <noscript><p>Open the download link to find the four videos on GitHub.</p></noscript>
   </main>
   <script>
     const clips = {
-      station: { file: "OurWater-01-add-a-station.mp4", seconds: 38 },
-      reading: { file: "OurWater-02-record-a-well-reading.mp4", seconds: 45 },
-      trend: { file: "OurWater-03-read-the-map-and-trend.mp4", seconds: 32 }
+      station: { file: "OurWater-01-add-a-station.mp4", seconds: 31 },
+      reading: { file: "OurWater-02-record-a-well-reading.mp4", seconds: 31 },
+      trend: { file: "OurWater-03-read-the-map-and-trend.mp4", seconds: 31 },
+      tools: { file: "OurWater-04-open-the-groundwater-game.mp4", seconds: 23 }
     };
     const requested = new URLSearchParams(location.search).get("clip");
     const key = Object.hasOwn(clips, requested) ? requested : "station";
@@ -50,7 +52,7 @@
     document.title = selected.textContent + " | OurWater";
     document.getElementById("details").textContent = seconds + " seconds · English instructions on screen";
 
-    const asset = "https://github.com/marvi-groundwater/OurWater/releases/download/workshop-demo-2026-11-10/" + file;
+    const asset = "https://github.com/marvi-groundwater/OurWater/releases/download/workshop-demo-2026-11-11/" + file;
     const player = document.getElementById("demo");
     player.addEventListener("error", () => { document.getElementById("error").hidden = false; });
     player.src = asset;
