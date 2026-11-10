@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Workshop demos | OurWater</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #102f36; color: #fffef7; font: 1rem/1.5 system-ui, sans-serif; }
+    main { width: min(72rem, 100% - 2rem); margin: 2rem auto 3rem; }
+    .eyebrow { margin: 0 0 .25rem; color: #95e2cf; font-size: .85rem; font-weight: 700; letter-spacing: .12em; }
+    h1 { margin: 0; font-size: clamp(1.55rem, 4vw, 2.5rem); line-height: 1.2; }
+    .details { color: #c2d9d5; margin: .45rem 0 1rem; }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #071b1f; border: 1px solid #547672; border-radius: .5rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0; }
+    a { color: #b1f2e2; }
+    nav a { padding: .45rem .7rem; border: 1px solid #71938d; border-radius: .35rem; }
+    nav a[aria-current="page"] { background: #95e2cf; color: #102f36; }
+    a:focus-visible { outline: 3px solid #fffef7; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">OURWATER WORKSHOP</p>
+    <h1 id="title">OurWater demos</h1>
+    <p class="details" id="details">English instructions on screen</p>
+    <video id="demo" controls autoplay muted playsinline preload="metadata" aria-labelledby="title"></video>
+    <p id="error" role="status" hidden>Playback was interrupted. Open the download link below.</p>
+    <nav aria-label="Workshop demos">
+      <a href="?clip=station" data-clip="station">Add a station</a>
+      <a href="?clip=reading" data-clip="reading">Record a well reading</a>
+      <a href="?clip=trend" data-clip="trend">Find a well and read its trend</a>
+    </nav>
+    <p><a id="download" href="https://github.com/marvi-groundwater/OurWater/releases/tag/workshop-demo-2026-11-10">Download the MP4</a></p>
+    <noscript><p>Open the download link to find the three videos on GitHub.</p></noscript>
+  </main>
+  <script>
+    const clips = {
+      station: { file: "OurWater-01-add-a-station.mp4", seconds: 38 },
+      reading: { file: "OurWater-02-record-a-well-reading.mp4", seconds: 45 },
+      trend: { file: "OurWater-03-read-the-map-and-trend.mp4", seconds: 32 }
+    };
+    const requested = new URLSearchParams(location.search).get("clip");
+    const key = Object.hasOwn(clips, requested) ? requested : "station";
+    const { file, seconds } = clips[key];
+    const selected = document.querySelector('[data-clip="' + key + '"]');
+    selected.setAttribute("aria-current", "page");
+    document.getElementById("title").textContent = selected.textContent;
+    document.title = selected.textContent + " | OurWater";
+    document.getElementById("details").textContent = seconds + " seconds · English instructions on screen";
+
+    const asset = "https://github.com/marvi-groundwater/OurWater/releases/download/workshop-demo-2026-11-10/" + file;
+    const player = document.getElementById("demo");
+    player.addEventListener("error", () => { document.getElementById("error").hidden = false; });
+    player.src = asset;
+    document.getElementById("download").href = asset;
+  </script>
+</body>
+</html>

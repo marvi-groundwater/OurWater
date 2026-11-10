@@ -173,5 +173,6 @@ cpSync(join(ROOT, "content"), join(OUT, "content"), { recursive: true });
 cpSync(join(ROOT, "get"), join(OUT, "get"), { recursive: true });
 // The station QR landing page (/s?id=…) — same reason, copied not rendered.
 cpSync(join(ROOT, "s"), join(OUT, "s"), { recursive: true });
+cpSync(join(ROOT, "workshop-demos"), join(OUT, "workshop-demos"), { recursive: true });
 writeFileSync(join(OUT, ".nojekyll"), "");
 console.log("built _site/");
