@@ -72,12 +72,18 @@
     }
     .tabs::-webkit-scrollbar { display: none; }
     .tab-link {
-      padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+      /* 12px, not 14: seven tabs (Research added) must still fit beside
+         the logo and the two buttons at a 1280px desktop. */
+      padding: 7px 12px; border-radius: 999px; white-space: nowrap;
       text-decoration: none; color: var(--ink); font-weight: 500; font-size: .95rem;
     }
     .tab-link:hover { background: var(--wash); }
     .tab-link[aria-current="page"] { background: var(--brand); color: #fff; }
     .header-cta { display: flex; gap: 10px; align-items: center; }
+    @media (min-width: 761px) and (max-width: 1100px) {
+      .tabs { gap: 2px; }
+      .tab-link { padding: 7px 9px; }
+    }
 
     @media (max-width: 760px) {
       .header-row { flex-wrap: wrap; gap: 14px; }
@@ -293,6 +299,42 @@
        section was a second copy of the same two badges in the same panel. */
     .stores { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
 
+    /* Research tab — game-play videos, a report example and tool imagery. */
+    .r-mosaic { display: grid; gap: 14px; margin-top: 30px;
+                grid-template-columns: repeat(12, 1fr); }
+    .r-tile { margin: 0; position: relative; overflow: hidden; border-radius: 14px;
+              border: 1px solid var(--line); background: #0f1a20;
+              box-shadow: 0 10px 28px rgba(14,74,99,.10); }
+    .r-tile img { width: 100%; height: 100%; object-fit: cover; display: block;
+                  transition: transform .5s ease; }
+    .r-tile:hover img { transform: scale(1.03); }
+    .r-tile figcaption { position: absolute; left: 0; right: 0; bottom: 0;
+                         padding: 26px 16px 12px; color: #fff; font-size: .88rem; line-height: 1.4;
+                         background: linear-gradient(180deg, transparent, rgba(8,24,32,.82)); }
+    .r-tile figcaption b { display: block; font-size: .72rem; letter-spacing: .08em;
+                           text-transform: uppercase; opacity: .85; margin-bottom: 2px; }
+    .r-a { grid-column: span 7; aspect-ratio: 836 / 372; }
+    .r-b { grid-column: span 5; grid-row: span 2; }
+    .r-c { grid-column: span 7; aspect-ratio: 1400 / 491; }
+    .r-d { grid-column: span 12; aspect-ratio: 1400 / 520; }
+    .r-d img { object-position: top; }
+    @media (max-width: 760px) {
+      .r-a, .r-b, .r-c, .r-d { grid-column: span 12; grid-row: auto; aspect-ratio: auto; }
+      .r-tile img { height: auto; }
+      /* Short wide images: a caption laid over them would hide the picture. */
+      .r-tile figcaption { position: static; background: #0f1a20; padding: 10px 14px 12px; }
+    }
+    .r-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 26px; }
+    .r-report { display: grid; gap: 22px; margin-top: 30px;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); align-items: start; }
+    .r-report figure { margin: 0; background: #fff; border: 1px solid var(--line);
+                       border-radius: 14px; overflow: hidden; }
+    .r-report img { width: 100%; display: block; }
+    .r-report figcaption { padding: 14px 18px 18px; font-size: .9rem; color: var(--muted); line-height: 1.5; }
+    .r-report figcaption h3 { margin: 0 0 4px; font-size: 1.02rem; color: var(--ink); }
+    .r-note { max-width: 760px; margin: 22px auto 0; font-size: .85rem; color: var(--muted);
+              text-align: center; line-height: 1.55; }
+
     /* Tutorial gallery — self-hosted video, no third-party player. */
     .tuts {
       display: grid; gap: 26px; margin-top: 34px;
@@ -436,6 +478,7 @@
         <a class="tab-link" href="#how-it-works">How it works</a>
         <a class="tab-link" href="#tutorials">Tutorials</a>
         <a class="tab-link" href="#data">Data</a>
+        <a class="tab-link" href="#research">Research</a>
         <a class="tab-link" href="#faq">FAQ</a>
       </nav>
       <div class="header-cta">
@@ -607,6 +650,117 @@
       </section>
     </div>
 
+    <!-- ── Research ─────────────────────────────────────────────── -->
+    <!-- Hard-coded like the footer partners block: no CMS fields. Media in
+         assets/research/ — the videos and the report were recorded from a
+         solo game (you + three computer farmers) on the live game, 15 Nov
+         2026; the check dam images use the calculator's own example file
+         (Badgaon, 2014). -->
+    <div class="panel" id="panel-research">
+      <section>
+        <div class="wrap">
+          <h2>Research tools you can play with</h2>
+          <p class="section-sub">
+            OurWater's tool marketplace holds small research tools that each do one job.
+            Two are open to every OurWater account: the MARVI Groundwater Game, where a
+            village shares one aquifer, and a check dam calculator that works out how much
+            water a dam put back into the ground.
+          </p>
+          <div class="r-mosaic">
+            <figure class="r-tile r-a">
+              <img src="assets/research/game-harvest.jpg" alt="Harvest in the Groundwater Game: ten planted fields, each showing the money it earned" loading="lazy" />
+              <figcaption><b>Groundwater Game</b>Harvest day: every field shows what it earned.</figcaption>
+            </figure>
+            <figure class="r-tile r-b">
+              <img src="assets/research/game-water-story.jpg" alt="A 3D block of shared groundwater under four farms, labelled Arjun, Lakshmi, Ravi and You" loading="lazy" />
+              <figcaption><b>Groundwater Game</b>Four farms, one aquifer: the game replays the water under the village round by round.</figcaption>
+            </figure>
+            <figure class="r-tile r-c">
+              <img src="assets/research/checkdam-result.jpg" alt="Check dam calculator result: 112,886 cubic metres soaked into the ground, next to a drawing of the dam spilling" loading="lazy" />
+              <figcaption><b>Check dam calculator</b>How much water soaked into the ground behind the dam.</figcaption>
+            </figure>
+            <figure class="r-tile r-d">
+              <img src="assets/research/checkdam-season.jpg" alt="Charts of daily rainfall, pond water level and where the water went over the 2014 monsoon" loading="lazy" />
+              <figcaption><b>Check dam calculator</b>A whole monsoon, day by day: rain, pond level, and where the water went.</figcaption>
+            </figure>
+          </div>
+          <div class="r-actions">
+            <a class="btn btn-primary" href="https://d2tr2iwq873we0.cloudfront.net/play" target="_blank" rel="noopener">Play the Groundwater Game</a>
+            <a class="btn btn-outline" href="@@APP_URL@@/tool-marketplace">Open the tool marketplace</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="alt">
+        <div class="wrap">
+          <h2>Game play</h2>
+          <p class="section-sub">
+            Three years on rocky ground: you and three computer farmers plant crops, water
+            them from the same groundwater, harvest, and decide what to leave for next year.
+          </p>
+          <div class="tuts">
+            <figure class="tut">
+              <video controls preload="none" playsinline poster="assets/research/poster-30s.jpg" aria-label="The whole Groundwater Game in 30 seconds">
+                <source src="assets/research/marvi-game-in-30-seconds.mp4" type="video/mp4" />
+                Your browser cannot play this video.
+                <a href="assets/research/marvi-game-in-30-seconds.mp4">Download it instead</a>.
+              </video>
+              <figcaption>
+                <h3>The whole game in 30 seconds<span class="dur">0:29</span></h3>
+                <p>Three years of planting, watering and harvest, played at five times speed, ending on the village's report.</p>
+              </figcaption>
+            </figure>
+            <figure class="tut">
+              <video controls preload="none" playsinline poster="assets/research/poster-full.jpg" aria-label="A full Groundwater Game, start to finish">
+                <source src="assets/research/marvi-game-full-playthrough.mp4" type="video/mp4" />
+                Your browser cannot play this video.
+                <a href="assets/research/marvi-game-full-playthrough.mp4">Download it instead</a>.
+              </video>
+              <figcaption>
+                <h3>A full game, start to finish<span class="dur">2:26</span></h3>
+                <p>Quick start, one field at a time: choosing crops, six watering rounds each winter, the harvest, the summer choice, and how the ground changed.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2>What the game gives back: a report</h2>
+          <p class="section-sub">
+            The last page of every game tells the village's story: the water left in the
+            ground, each farm's money, and every year's harvest. One button turns it into a
+            PDF report to take home or discuss in class.
+          </p>
+          <div class="r-report">
+            <figure>
+              <img src="assets/research/game-report-page.jpg" alt="The game's final page: Your village's story, with the farm, 5 m of water left behind, and the cash balance" loading="lazy" />
+              <figcaption>
+                <h3>The final page of a game</h3>
+                "Your village's story": the farm after harvest, the water left for the next farmer, and the money made.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="assets/research/game-report-pdf-pages.jpg" alt="Four pages of the PDF game report: summary, the village's water, pictures of the ground, and the farmers compared" loading="lazy" />
+              <figcaption>
+                <h3>The PDF report (8 pages)</h3>
+                Who earned most, who used least water, the water round by round, cross-sections of the ground, and the farmers side by side.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="r-actions">
+            <a class="btn btn-primary" href="assets/research/marvi-game-report-example.pdf" target="_blank" rel="noopener">Open the example report (PDF)</a>
+          </div>
+          <p class="r-note">
+            The Groundwater Game is a decision simulation built for learning together. Its crop
+            and aquifer numbers are illustrative, not a forecast for any real well. The check
+            dam images use the calculator's own example data (Badgaon, 2014).
+          </p>
+        </div>
+      </section>
+    </div>
+
     <!-- ── FAQ ──────────────────────────────────────────────────── -->
     <div class="panel" id="panel-faq">
       <section>
@@ -652,6 +806,7 @@
           <li><a href="#features">Features</a></li>
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#data">Data</a></li>
+          <li><a href="#research">Research</a></li>
           <li><a href="@@APP_URL@@/login">Sign in</a></li>
           <li><a href="@@APP_URL@@/register">Create account</a></li>
         </ul>
@@ -781,11 +936,11 @@
       bar.classList.add("show");
     })();
 
-    // Tab router: #home / #features / #how-it-works / #tutorials / #data / #faq map to
+    // Tab router: #home / #features / #how-it-works / #tutorials / #data / #research / #faq map to
     // panels; anything else falls back to the Overview panel and then scrolls
     // to the matching in-panel anchor if one exists.
     (function () {
-      var TABS = ["home", "features", "how-it-works", "tutorials", "data", "faq"];
+      var TABS = ["home", "features", "how-it-works", "tutorials", "data", "research", "faq"];
       function show() {
         var hash = (location.hash || "#home").slice(1);
         var tab = TABS.indexOf(hash) !== -1 ? hash : "home";
