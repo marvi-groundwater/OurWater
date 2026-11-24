@@ -115,7 +115,7 @@
   ],
   "tutorials": {
     "title": "Watch how it's done",
-    "subtitle": "Twenty-six short tutorials, narrated, recorded from the real app. Start with the first one and you will have an account in about 5 minutes.",
+    "subtitle": "Twenty-seven short tutorials, narrated, recorded from the real app. Start with the first one and you will have an account in about 5 minutes.",
     "items": [
       {
         "title": "Create your OurWater account",
@@ -342,6 +342,14 @@
         "src": "https://app.ourwater.org.au/tutorials/26-ask-ourwater-guru.mp4?v=20261014",
         "poster": "https://app.ourwater.org.au/tutorials/26-ask-ourwater-guru.jpg?v=20261014",
         "captions": "assets/captions/26-ask-ourwater-guru.vtt"
+      },
+      {
+        "title": "Upload a large data file, such as logger readings",
+        "text": "How to load months of readings from a water-level logger: register the wells from a station file, check their station codes, then choose the readings file and watch the import run in steps until every reading is in. Choosing the same file again never stores a reading twice.",
+        "duration": "1:35",
+        "src": "https://app.ourwater.org.au/tutorials/27-upload-a-large-file.mp4?v=20261125",
+        "poster": "https://app.ourwater.org.au/tutorials/27-upload-a-large-file.jpg?v=20261125",
+        "captions": "assets/captions/27-upload-a-large-file.vtt"
       }
     ]
   },

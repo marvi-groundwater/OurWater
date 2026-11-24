@@ -1,0 +1,88 @@
+WEBVTT
+
+00:00:00.250 --> 00:00:06.610
+This video shows how to upload a large data file, such as
+months of readings from a water-level logger.
+
+00:00:07.417 --> 00:00:10.729
+Open Upload data file from the Measurements
+page.
+
+00:00:10.849 --> 00:00:12.721
+It has two parts.
+
+00:00:12.841 --> 00:00:17.017
+First you register the stations, then you add
+their measurements.
+
+00:00:17.850 --> 00:00:21.546
+Choose Register stations, then your station
+file.
+
+00:00:21.666 --> 00:00:27.906
+Each row is one well: its name, type,
+position, village and district.
+
+00:00:28.026 --> 00:00:30.570
+Here are three example wells.
+
+00:00:31.383 --> 00:00:33.735
+Press Register these stations.
+
+00:00:33.855 --> 00:00:36.231
+Then switch to Add measurements.
+
+00:00:36.351 --> 00:00:40.647
+Your new wells are on the map, each with its
+own station code.
+
+00:00:40.767 --> 00:00:43.767
+The readings file must use these codes.
+
+00:00:44.583 --> 00:00:46.671
+Choose the readings file.
+
+00:00:46.791 --> 00:00:52.023
+This one is from one logger: forty-four
+thousand, five hundred readings,
+
+00:00:52.143 --> 00:00:55.431
+one every five minutes for five and a half
+months.
+
+00:00:55.551 --> 00:00:59.367
+The preview checks every row before anything
+is saved.
+
+00:01:00.183 --> 00:01:02.055
+Press Import.
+
+00:01:02.175 --> 00:01:06.855
+A large file is sent once, and OurWater
+imports it in steps.
+
+00:01:06.975 --> 00:01:09.447
+The bar shows how far it has got.
+
+00:01:09.567 --> 00:01:12.519
+Keep the page open until it finishes.
+
+00:01:13.350 --> 00:01:18.678
+When it finishes, you see how many
+measurements went in: all forty-four thousand,
+
+00:01:18.798 --> 00:01:21.126
+five hundred and twenty-two of them.
+
+00:01:21.950 --> 00:01:23.918
+That is all it takes.
+
+00:01:24.038 --> 00:01:30.038
+If the connection drops part-way, choose the same
+file again: readings already saved are skipped,
+
+00:01:30.158 --> 00:01:32.558
+so nothing is stored twice.
+
+00:01:32.678 --> 00:01:35.342
+Thanks for helping look after our water.
